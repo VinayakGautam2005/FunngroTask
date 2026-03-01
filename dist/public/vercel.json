@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+        {
+            "source": "/(api|shared|assets)/:path*",
+            "destination": "/:path*"
+        },
+        {
+            "source": "/((?!api|shared|assets).*)",
+            "destination": "/index.html"
+        }
+    ]
+}
